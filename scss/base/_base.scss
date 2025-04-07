@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 html {
     font-size: 62.5%;
 }
@@ -14,6 +12,7 @@ body {
     font-size: 1.6rem;
     font-family: Gordita, sans-serif;
     color: var(--text-color);
+    background: var(--body-bg);
 }
 
 a {
@@ -21,20 +20,23 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a,
+img,
 button,
 input,
 textarea,
 select {
     font-family: inherit;
     color: inherit;
-}
-
-button {
-    border: none;
-    outline: none;
-    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .icon {
-    filter: var(--icon-filter);
+    filter: var(--icon-color);
 }
